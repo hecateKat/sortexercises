@@ -24,4 +24,19 @@ public class BubbleSortTest {
         //then
         Assert.assertEquals(returned, expected);
     }
+
+    @Test
+    public void sortEmptyListTest(){
+
+        //given
+        BubbleSort bubbleSort = new BubbleSort();
+        List<Integer> unsortedList = new ArrayList<>();
+
+        //when
+        List<Integer> returned = bubbleSort.sort(unsortedList);
+        List<Integer> expected = new ArrayList<>();
+
+        //then
+        Assert.assertEquals(returned, expected);
+    }
 }
